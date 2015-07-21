@@ -58,9 +58,9 @@ G2M.marker.pairs<-find.markers(id1=id.G2M,
 
 #load data: a matrix with data must be loaded. Genes are in rows, cells in columns.
 require(rhdf5)
-qseq.data<-h5read("../../data/normCounts_mESCquartz.h5f","LogNcountsQuartz")
-gene.names<-h5read("../../data/normCounts_mESCquartz.h5f","gene_names_all")
-cell.names<-h5read("../../data/normCounts_mESCquartz.h5f","cell_names")
+qseq.data<-h5read("../../../data/normCounts_mESCquartz.h5f","LogNcountsQuartz")
+gene.names<-h5read("../../../data/normCounts_mESCquartz.h5f","gene_names_all")
+cell.names<-h5read("../../../data/normCounts_mESCquartz.h5f","cell_names")
 row.names(qseq.data)<-gene.names
 colnames(qseq.data)<-cell.names
 #qseq.data =This is the dataset published in Sasagawa et al, Genome Biology, 14:R31, 2013
